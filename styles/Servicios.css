@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*GLOBALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/imagenes/flaco.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0em;
+    z-index: 1000 !important;
+}
+
+
+.logo {
+    margin-left: 2em;
+    width: 6%;
+}
+
+
+li {
+    list-style: none
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-self: center;
+    width: 40%;
+    margin-right: 5em;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-right: 0.8em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+
+}
+
+header nav a:hover,
+header nav a::before {
+    background-size: 100% 3px;
+    color: gold;
+
+}
+
+header div {
+    margin-bottom: 3em;
+    width: 80%;
+}
+
+.what img {
+    position: fixed;
+    width: 4.5em;
+    top: 88vh;
+    right: 1.5em;
+    z-index: 900;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-left: 2em;
+}
+
+.titulo1 {
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 1.5em;
+
+}
+
+/*ARTICLE*/
+.sector1 {
+    background-color: #2d4365;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    min-height: 70vh;
+    z-index: 1;
+  
+}
+
+.textoS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.imgArt {
+      width: 100%;
+    height: 100%;
+
+}
+
+.sector1 h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+
+}
+
+.sector1 p {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    width: 70%;
+    padding: 1em;
+
+}
+
+
+/*VETERINARIAS*/
+.divisor1 {
+    grid-area: divisor1;
+    margin: 1%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Peralta', cursive;
+    color: #2d4365;
+
+}
+
+.veterinarias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.guard {
+    grid-area: guard;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.titulo4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-top: 1em;
+}
+
+p a {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: lightgrey;
+}
+
+/*GUARDERIAS*/
+.divisor2 {
+    grid-area: divisor2;
+    margin: 1%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Peralta', cursive;
+    color: #2d4365;
+
+}
+
+
+.tituloA {
+    font-family: 'Peralta', cursive;
+    color: rgb(255, 248, 248);
+    font-size: 2rem;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2d4365;
+    ;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10%;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.imgT {
+    border-radius: 50%;
+    width: 70%;
+    height: 50%
+}
+
+/*PELUQUERIAS*/
+.divisor3 {
+    grid-area: divisor3;
+    margin: 1%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Peralta', cursive;
+    color: #2d4365;
+
+}
+
+.peluqueria {
+    grid-area: pelu;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.titulo4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-top: 1em;
+}
+
+.info {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    padding: 3%;
+    color: white;
+}
+
+/*POSTULATE*/
+.postulate {
+
+    height: 40vh;
+    background-color: #2d4365;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/imagenes/fondo5.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.titulo4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.btnPostulate {
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btnPostulate a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnPostulate:hover {
+    background-color: #1e2c42;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    bottom: 0em;
+    height: 40vh;
+}
+
+footer div {
+    padding: 1em;
+}
+
+
+.contactoh3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.formFooter {
+    display: flex;
+    height: 90%;
+    width: 25em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.formFooter input::placeholder {
+    color: gray;
+    font-size: 1em;
+}
+
+.formFooter input {
+    color: rgb(77, 77, 77);
+    font-size: 1em;
+}
+
+.formFooter textarea {
+    color: rgb(77, 77, 77);
+    font-size: 1.1em;
+}
+
+
+.formFooter button {
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
+    margin-top: 1em;
+    width: 40%;
+}
+
+
+
+.formFooter button:hover {
+    background-color: #1e2c42;
+
+}
+
+input {
+    height: 40px;
+    margin-top: 1em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    height: 50px;
+    margin-top: 2em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+textarea::placeholder {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacto {
+    height: 40vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.textoF {
+    text-align: center;
+    color: rgb(87, 87, 87);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.contacto ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto ul a img {
+    width: 80%;
+    filter: grayscale(1);
+}
+
+.contacto ul a img:hover {
+    filter: grayscale(0);
+}
+
+.contacto ul a {
+    width: 50px;
+    margin-right: 1em;
+}
+
+iframe {
+    padding: 1em;
+    width: 17rem;
+    height: 17rem;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    header nav{
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1000;
+
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a {
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+
+    header nav img {
+        display: none;
+
+    }
+
+    header div img {
+        display: none;
+
+    }
+
+    h1 {
+        font-size: 1rem;
+        margin-left: 1%;
+    }
+
+    .titulo1 {
+        justify-content: left;
+        align-content: left;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        color: white;
+        padding-left: 1.5em;
+        padding-right: 2rem;
+
+    }
+
+    .sector1 img {
+        display: none;
+
+
+    }
+
+    .contacto {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 3%;
+
+    }
+
+    .contacto p {
+        box-sizing: border-box;
+        text-align: justify;
+        color: rgb(14, 9, 9);
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1em;
+        padding: 5%;
+    }
+
+    iframe {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+ h1 {
+        font-size: 1.8em;
+
+    }
+
+    header div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+
+    .titulo1 {
+        font-size: 1.5rem;
+
+
+    }
+
+    header nav ul {
+        width: 100%;
+        margin-right: 1em;
+        right: 0%;
+        font-size: 1.8em;
+    }
+
+    .imgArt {
+   display: none;
+  
+    }
+}

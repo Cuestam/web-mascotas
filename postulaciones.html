@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LOGO PESTAÑA-->
+    <link rel="shortcut icon" href="/imagenes/logoblanco.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/Adopciones.css">
+    <title>Postulaciones</title>
+</head>
+
+<body class="bodyPost">
+    <header class="headerPos">
+        <nav>
+            <img class="logo" src="/imagenes/logoblanco.png" alt="logo">
+            <ul>
+               <li><a href="/index.html">Nosotros</a></li>
+               <li><a href="/servicios.html">Servicios</a></li>
+               <li><a href="/adopciones.html">Adopciones</a></li>
+               <li><a href="/postulaciones.html">Postulate</a></li>     
+            </ul>
+        </nav>
+
+        <div>
+            <h1>POSTULACIONES</h1>
+            <h2 class="titulo1">LLena el formulario y nos pondremos en contacto a la brevedad</h2>
+        </div>
+        <a class="what" href="https://web.whatsapp.com/"><img src="/imagenes/whatsapp.png" alt=""></a>
+    </header>
+
+    <aside class="asideP">
+
+        <img src="/imagenes/asideP.jpg" alt="">
+        <img src="/imagenes/asideP2.jpg" alt="">
+
+    </aside>
+
+    <section class="containerForm">
+        <h2 class="tituloF">FORMULARIO</h2>
+        <p class="textoP2">Este formulario es para procesar la solicitud. La concreción de la adopcion quedara sujeta a
+            los datos brindados, la verificación de los mismos y la disponibilidad del animal elegido.
+            Puede pasar que nos demoremos un tiempo en ponernos en contacto, ya que nos tomamos un tiempo para analizar
+            todas las postulaciones.
+        </p>
+        <form class="containerF" id="my-form" action="https://formspree.io/f/mlevlrng" method="POST">
+            <input required type="text" name="nombre" placeholder="Nombre y Apellido">
+            <input required type="text" name="telefono" placeholder="Telefono">
+            <input required type="text" narme="Dirección" placeholder="Dirección completa">
+            <input required type="email" name="email" placeholder="Email">
+            <input required type="text" name="Nombre animal" placeholder="Nombre del animal a adoptar">
+            <input required type="text" name="otros animales" placeholder="Tenes otros animales? si/no">
+            <input required type="text" name="familia" placeholder="integrantes de la familia y edades">
+            <button class="btnPostulate2" id="my-form-button">Enviar</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+
+
+    </footer>
+    <script src="/js/formulario.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

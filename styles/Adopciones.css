@@ -1,0 +1,1044 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bodyAdopciones {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto 40vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "article1 article1 article1 article1 aside1 aside1"
+        "aside2 aside2 article2 article2 article2 article2 "
+        "section1 section1 section1 section1 section1 section1"
+        "postulate postulate postulate postulate postulate postulate"
+        "footer footer footer footer footer footer"
+    ;
+}
+
+
+/*------------HEADER---------------*/
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/imagenes/fondo2f.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0em;
+    z-index: 1000 !important;
+}
+
+
+.logo {
+    margin-left: 2em;
+    width: 6%;
+}
+
+li {
+    list-style: none
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-self: center;
+    width: 40%;
+    margin-right: 5em;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-right: 0.8em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+
+}
+
+header nav a:hover,
+header nav a::before {
+    background-size: 100% 3px;
+    color: gold;
+
+}
+
+header div {
+    margin-bottom: 3em;
+    width: 80%;
+}
+
+.what img {
+    position: fixed;
+    width: 4.5em;
+    top: 88vh;
+    right: 1.5em;
+    z-index: 900;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.titulo1 {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 1.5em;
+
+}
+
+/*--------------ARTICLE----------*/
+
+.article1 {
+    background-color: #2d4365;
+    display: flex;
+    grid-area: article1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+
+}
+
+.tituloA {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+
+}
+
+.p1 {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    width: 70%;
+    padding: 1em;
+
+}
+
+.aside1 {
+    grid-area: aside1;
+    overflow: hidden;
+    background-color: #2d4365;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.imgP {
+    width: 100%;
+    height: 100%;
+}
+
+/*------------SECCION 2---------------*/
+
+.tituloA2 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-top: 1.5em;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    z-index: 1;
+
+}
+
+.article2 {
+    grid-area: article2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    z-index: 1;
+
+}
+
+
+.imgB {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/*--------------SECCION MASCOTAS-----------------*/
+.section1 {
+    grid-area: section1;
+    background-color: #2d4365;
+
+    z-index: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    padding: 2em;
+    overflow: hidden;
+}
+
+.titulo3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 1em;
+
+}
+
+.textoS1 {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.containerCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height: 500px;
+    margin-top: 3em;
+    border-radius: 10%;
+    box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.75);
+    overflow-y: hidden;
+}
+
+
+.containerCard:hover button {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.containerCard div {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.containerCard h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin-top: 0.7em;
+}
+
+.containerCard p {
+    margin-top: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: rgb(97, 97, 97);
+    width: 90%;
+    text-align: center;
+}
+
+.btnCard {
+    height: 60px;
+    position: relative;
+    left: 9em;
+    display: none;
+    bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnCard img {
+    height: 60px;
+}
+
+
+.imageCard {
+    width: 100%;
+    height: 25em;
+}
+
+/*-------------SECTION 2--------------*/
+
+.postulate {
+    grid-area: postulate;
+    height: 40vh;
+    background-color: #2d4365;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/imagenes/fondo5.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.titulo4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.btnPostulate {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnPostulate a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnPostulate:hover {
+    background-color: #1e2c42;
+}
+
+/*----------------FOOTER----------------*/
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0em;
+    height: 40vh;
+
+}
+
+footer div {
+    padding: 1em;
+}
+
+
+.contactoh3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.formFooter {
+    display: flex;
+    height: 90%;
+    width: 25em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.formFooter input::placeholder {
+    color: gray;
+    font-size: 1em;
+}
+
+.formFooter input {
+    color: rgb(77, 77, 77);
+    font-size: 1em;
+}
+
+.formFooter textarea {
+    color: rgb(77, 77, 77);
+    font-size: 1.1em;
+}
+
+
+.formFooter button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
+    margin-top: 1em;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.formFooter button:hover {
+    background-color: #1e2c42;
+
+}
+
+input {
+    height: 40px;
+    margin-top: 1em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    height: 50px;
+    margin-top: 2em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+textarea::placeholder {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacto {
+    height: 40vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.textoF {
+    text-align: center;
+    color: rgb(87, 87, 87);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.contacto ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto ul a img {
+    width: 80%;
+    filter: grayscale(1);
+}
+
+.contacto ul a img:hover {
+    filter: grayscale(0);
+}
+
+.contacto ul a {
+    width: 50px;
+    margin-right: 1em;
+}
+
+iframe {
+    padding: 1em;
+    width: 17rem;
+    height: 17rem;
+}
+
+
+/*------------FORMULARIO POSTULACIONES---------------*/
+
+.bodyPost {
+
+    background-color: #89aac3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 40vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "asideP asideP containerForm  containerForm containerForm containerForm"
+        "footer footer footer footer footer footer"
+
+
+}
+
+
+.headerPos {
+    background-image: url('/imagenes/fondo2P.png');
+}
+
+
+.tituloB {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.textoP {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    width: 70%;
+    margin-top: 4em;
+}
+
+.asideP {
+    grid-area: asideP;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d4365;
+    z-index: 1;
+
+}
+
+.asideP img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerForm {
+    grid-area: containerForm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d4365;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.tituloF {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.textoP2 {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    margin-top: 2em;
+    width: 85%;
+}
+
+
+.containerF {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containerF input {
+
+    height: 50px;
+    margin-top: 2em;
+    text-decoration: none;
+    background-color: #2d4365;
+    width: 80%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+.containerF input::placeholder {
+    color: rgb(158, 158, 158);
+    font-size: 1em;
+}
+
+
+
+.btnPostulate2 {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
+    margin-top: 6em;
+    margin-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnPostulate2:hover {
+    background-color: #1e2c42;
+}
+
+
+/*----------MODAL---------------*/
+
+.ed-modal-container {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 101;
+}
+
+
+.ed-modal-container::before {
+    content: "X";
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5em;
+    opacity: 0.5;
+    z-index: 101;
+}
+
+.ed-modal-container:hover::before {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.ed-modal-content {
+    background: #fff;
+    width: 90%;
+    height: 50vh;
+    border-radius: 5px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.imageModal {
+    float: left;
+    width: 40%;
+    margin-left: 1em;
+}
+
+.tituloM {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 2em;
+    text-align: left !important;
+}
+
+
+.modal p {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    width: 85%;
+}
+
+.modal h4 {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    width: 85%;
+}
+
+
+/* ---------------MEDIAQUERYS--------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+
+    .bodyAdopciones {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto 40vh;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header header"
+            "article1 article1 article1 article1 article1 article1"
+            "article2 article2 article2 article2 article2 article2 "
+            "section1 section1 section1 section1 section1 section1"
+            "postulate postulate postulate postulate postulate postulate"
+            "footer footer footer footer footer footer"
+        ;
+    }
+
+
+    header nav {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1000;
+
+    }
+
+
+    .article1 {
+        height: 30vh;
+    }
+
+    .article1 p {
+        width: 90%;
+    }
+
+
+    .article2 {
+        height: 30vh;
+    }
+
+    .article2 p {
+        width: 90%;
+    }
+
+    .aside1 {
+        display: none;
+    }
+
+    .aside2 {
+        display: none;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .bodyAdopciones {
+        grid-template-rows: auto auto auto auto auto 80vh;
+
+    }
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        height: 80vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0em;
+
+    }
+
+    footer div {
+        padding: 0em;
+    }
+
+
+
+    .formFooter {
+        display: flex;
+        height: 100%;
+        width: 30em;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .formFooter button {
+        height: 40px;
+    }
+
+
+    .divForm {
+        margin-bottom: 2em;
+    }
+
+    .contacto {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 1em;
+    }
+
+    .contacto p {
+        font-size: 1.5em;
+
+    }
+
+    .contacto ul a img {
+        width: 90%;
+        filter: grayscale(0);
+    }
+
+    .iframeC {
+        margin-top: -1em;
+    }
+  
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .bodyAdopciones {
+        grid-template-rows: auto auto auto auto auto 100vh;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    header {
+        align-items: flex-start;
+    }
+
+    header nav {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li  {
+        margin-top: 1em !important;
+        font-size: 1.5em;
+    }
+
+
+    header nav img {
+        display: none;
+
+    }
+
+    header div img {
+        display: none;
+
+    }
+
+    .titulo1 {
+        justify-content: left;
+        align-content: left;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        color: white;
+        padding-left: -1.5em;
+
+    }
+
+    .article1 {
+        height: auto;
+    }
+
+    .article2 {
+        height: auto;
+    }
+
+    .tiutoA {
+        text-align: center;
+    }
+
+    .tituloB {
+        text-align:
+
+            center;
+    }
+    
+    .containerCard button {
+        display: block;
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    .formFooter {
+        width: 30em;
+        height: 80%;
+    }
+
+    .contacto ul a img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 30px;
+    }
+
+
+    .contacto p {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .container {
+        margin-left: 0em;
+    }
+
+    .what {
+        display: none;
+    }
+ 
+}
+
+@media only screen and (max-width: 420px) {
+
+    .tituloA2{
+        text-align: center;
+    }
+
+    .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: -1.5em;
+    } 
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        width: 100%;
+        position: fixed;
+        bottom: 0em;
+        height: 100vh;
+        
+    
+    }
+    .contacto ul a img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 40px;
+    }
+    
+    footer div {
+        padding: 1em;
+    }
+
+    .formFooter {
+        width: 50vh;
+        height: 80%;
+    }
+    
+    
+    .contactoh3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+
+    .contacto {
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    
+    
+    .iframeC {
+     display: none;
+    }
+    
+ 
+  
+}

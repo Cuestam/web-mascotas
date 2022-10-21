@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bodyIndex {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto 40vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "sector1 sector1 sector1 sector1 aside1 aside1"
+        "aside2 aside2 sector2 sector2 sector2 sector2"
+        "sector3 sector3 sector3 sector3 sector3 sector3"
+        "postulate postulate postulate postulate postulate postulate"
+        "footer footer footer footer footer footer"
+    ;
+}
+
+/*HEADER*/
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/imagenes/img-inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0em;
+    z-index: 1000 !important;
+}
+
+
+.logo {
+    margin-left: 2em;
+    width: 6%;
+}
+
+li {
+    list-style: none
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-self: center;
+    width: 40%;
+    margin-right: 5em;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-right: 0.8em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+
+}
+
+header nav a:hover,
+header nav a::before {
+    background-size: 100% 3px;
+    color: gold;
+
+}
+
+header div {
+    margin-bottom: 3em;
+    width: 80%;
+}
+
+.what img {
+    position: fixed;
+    width: 4.5em;
+    top: 88vh;
+    right: 1.5em;
+    z-index: 900;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.titulo1 {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 1.5em;
+
+}
+
+/* ----------SECCION 1 -------------*/
+
+.sector1 {
+    background-color: #2d4365;
+    display: flex;
+    grid-area: sector1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+
+}
+
+.sector1 h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+
+}
+
+.sector1 p {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    width: 70%;
+    padding: 1em;
+
+}
+
+.aside1 {
+    grid-area: aside1;
+    overflow: hidden;
+    background-color: #2d4365;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.imgArt {
+    width: 130%;
+    height: 100%;
+}
+
+
+
+
+
+/* ----------SECCION 2 -------------*/
+
+h2 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+
+}
+.aside2 {
+    grid-area: aside2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    z-index: 1;
+
+}
+
+.sector2 {
+    grid-area: sector2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    z-index: 1;
+
+}
+
+.sector2 p {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    width: 70%;
+    margin-top: 2em;
+
+}
+
+.imgArt2 {
+    width: 120%;
+    height: 100%;
+}
+
+/* ----------SECCION 3 -------------*/
+
+.sector3 {
+    grid-area: sector3;
+    width: 100%;
+    background-color: #2d4365;
+    z-index: 1;
+}
+
+.tituloS3 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nuestroequipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: -50px;
+}
+
+#titequipo {
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+}
+
+.equipo {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.texto h3,
+h4,
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+/*SECTION 4*/
+
+.postulate {
+    grid-area: postulate;
+    height: 40vh;
+    background-color: #2d4365;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/imagenes/fondo5.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.titulo4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.btnPostulate {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btnPostulate a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnPostulate:hover {
+    background-color: #1e2c42;
+}
+
+/*-------------FOOTER----------*/
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0em;
+    height: 40vh;
+
+}
+
+footer div {
+    padding: 1em;
+}
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.formFooter {
+    display: flex;
+    height: 90%;
+    width: 25em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.formFooter input::placeholder {
+    color: gray;
+    font-size: 1em;
+}
+
+.formFooter input {
+    color: rgb(77, 77, 77);
+    font-size: 1em;
+}
+
+.formFooter textarea {
+    color: rgb(77, 77, 77);
+    font-size: 1.5em;
+}
+
+
+.formFooter button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d4365;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
+    margin-top: 1em;
+    width: 120px;
+}
+
+
+
+.formFooter button:hover {
+    background-color: #1e2c42;
+
+}
+
+input {
+    height: 40px;
+    margin-top: 1em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+    font-size: 1em;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    height: 50px;
+    margin-top: 2em;
+    text-decoration: none;
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: bisque;
+
+
+}
+
+textarea::placeholder {
+    font-size: 0.7em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacto {
+    height: 40vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contacto p {
+    text-align: center;
+    color: rgb(87, 87, 87);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    margin-top: -2em;
+}
+
+.contacto ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto ul a img {
+    width: 80%;
+    filter: grayscale(1);
+}
+
+.contacto ul a img:hover {
+    filter: grayscale(0);
+}
+
+.contacto ul a {
+    width: 50px;
+    margin-right: 1em;
+}
+
+iframe {
+    padding: 1em;
+    width: 17rem;
+    height: 17rem;
+}
