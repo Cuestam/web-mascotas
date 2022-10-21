@@ -32,7 +32,7 @@ header {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-image: url('/imagenes/img-inicio.jpg');
+    background-image: url('/imagenes/img-inicio.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -100,15 +100,15 @@ header div {
 
 .what img {
     position: fixed;
-    width: 4.5em;
+    width: 4em;
     top: 88vh;
     right: 1.5em;
     z-index: 900;
 }
 
-h1 {
+.tituloPpal {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5em;
     color: white;
     margin-left: 1.5em;
 }
@@ -116,7 +116,7 @@ h1 {
 .titulo1 {
 
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5em;
     color: white;
     padding: 1.5em;
 
@@ -141,7 +141,7 @@ h1 {
 .sector1 h2 {
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
 
 }
 
@@ -149,7 +149,7 @@ h1 {
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 70%;
     padding: 1em;
 
@@ -179,12 +179,13 @@ h1 {
 
 /* ----------SECCION 2 -------------*/
 
-h2 {
+.sector2 h2 {
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-
+    font-size: 2em;
+    margin-top: 1em;
 }
+
 .aside2 {
     grid-area: aside2;
     background-color: white;
@@ -212,10 +213,10 @@ h2 {
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 70%;
     margin-top: 2em;
-
+    margin-bottom: 1.5em;
 }
 
 .imgArt2 {
@@ -237,6 +238,7 @@ h2 {
     color: white;
     text-align: center;
     padding: 1em;
+    font-size: 2em;
 }
 
 .foto {
@@ -268,14 +270,31 @@ h2 {
     margin: 20px;
 }
 
-.texto h3,
-h4,
-p {
+.texto h3 {
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
     padding: 0;
     text-align: center;
     color: white;
+    font-size: 1.3em;
+}
+
+.texto h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+
+.texto p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
 }
 
 /*SECTION 4*/
@@ -345,7 +364,7 @@ footer div {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -376,15 +395,17 @@ h3 {
 }
 
 
-.formFooter button {
-    height: 50px;
+.btnF2 {
+    height: 70px;
     border-radius: 5px;
     background-color: #2d4365;
     color: white;
     cursor: pointer;
     box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
     margin-top: 1em;
-    width: 120px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
 }
 
 
@@ -435,6 +456,12 @@ textarea::placeholder {
     flex-direction: column;
     justify-content: space-between;
 }
+.textoF {
+    text-align: center;
+    color: rgb(87, 87, 87);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
 
 
 .contacto p {
@@ -451,7 +478,7 @@ textarea::placeholder {
 }
 
 .contacto ul a img {
-    width: 80%;
+    width: 70%;
     filter: grayscale(1);
 }
 

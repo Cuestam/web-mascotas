@@ -102,15 +102,15 @@ header div {
 
 .what img {
     position: fixed;
-    width: 4.5em;
+    width: 4em;
     top: 88vh;
     right: 1.5em;
     z-index: 900;
 }
 
-h1 {
+.tituloPpal {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5em;
     color: white;
     margin-left: 1.5em;
 }
@@ -118,7 +118,7 @@ h1 {
 .titulo1 {
 
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5em;
     color: white;
     padding: 1.5em;
 
@@ -144,7 +144,7 @@ h1 {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
 
 }
 
@@ -152,7 +152,7 @@ h1 {
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 70%;
     padding: 1em;
 
@@ -181,7 +181,7 @@ h1 {
 .tituloA2 {
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 1.5em;
 }
 
@@ -189,6 +189,7 @@ h1 {
     grid-area: aside2;
     background-color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 80vh;
@@ -390,7 +391,7 @@ footer div {
 
 .contactoh3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -421,8 +422,8 @@ footer div {
 }
 
 
-.formFooter button {
-    height: 50px;
+.btnF2 {
+    height: 70px;
     border-radius: 5px;
     background-color: #2d4365;
     color: white;
@@ -431,6 +432,7 @@ footer div {
     margin-top: 1em;
     width: 40%;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
 }
 
 
@@ -486,7 +488,7 @@ textarea::placeholder {
     text-align: center;
     color: rgb(87, 87, 87);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .contacto ul {
@@ -495,7 +497,7 @@ textarea::placeholder {
 }
 
 .contacto ul a img {
-    width: 80%;
+    width: 70%;
     filter: grayscale(1);
 }
 
@@ -542,14 +544,14 @@ iframe {
 .tituloB {
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .textoP {
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 70%;
     margin-top: 4em;
 }
@@ -585,7 +587,7 @@ iframe {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 1em;
 }
 
@@ -593,7 +595,7 @@ iframe {
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-top: 2em;
     width: 85%;
 }
@@ -981,6 +983,7 @@ iframe {
 @media only screen and (max-width: 420px) {
 
     .tituloA2{
+        margin-top: 1em;
         text-align: center;
     }
 

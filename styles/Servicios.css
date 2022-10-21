@@ -83,23 +83,23 @@ header div {
 
 .what img {
     position: fixed;
-    width: 4.5em;
+    width: 4em;
     top: 88vh;
     right: 1.5em;
     z-index: 900;
 }
 
-h1 {
+.tituloPpal {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5em;
     color: white;
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 
 .titulo1 {
-    margin-left: 2em;
+
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5em;
     color: white;
     padding: 1.5em;
 
@@ -352,7 +352,7 @@ footer div {
 
 .contactoh3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -383,9 +383,8 @@ footer div {
 }
 
 
-.formFooter button {
-    font-family: 'Roboto', sans-serif;
-    height: 50px;
+.btnF2 {
+    height: 70px;
     border-radius: 5px;
     background-color: #2d4365;
     color: white;
@@ -393,6 +392,8 @@ footer div {
     box-shadow: 1px 2px 6px rgba(0, 0, 1, 0.5);
     margin-top: 1em;
     width: 40%;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
 }
 
 
@@ -448,7 +449,7 @@ textarea::placeholder {
     text-align: center;
     color: rgb(87, 87, 87);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .contacto ul {
@@ -457,7 +458,7 @@ textarea::placeholder {
 }
 
 .contacto ul a img {
-    width: 80%;
+    width: 70%;
     filter: grayscale(1);
 }
 

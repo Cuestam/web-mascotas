@@ -35,7 +35,7 @@ document.getElementById('footer').innerHTML = `
     <input type="text" required name= "Nombre y apellido" placeholder="Nombre y apellido">
     <input type="email" required  name="Email" placeholder="Email">
     <textarea required name="Mensaje" placeholder= "Mensaje.." cols="30" rows="8"></textarea>
-    <button id="btnF">Enviar</button>
+    <button id="btnF" class="btnF2">Enviar</button>
 </form>
 </div>
 <div class="iframeC">
