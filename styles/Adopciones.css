@@ -99,9 +99,7 @@ header div {
     width: 80%;
 }
 
-.hamburguer {
-    display: none;
-}
+
 
 .what img {
     position: fixed;
@@ -126,6 +124,14 @@ header div {
     padding: 1.5em;
 
 }
+
+/*HAMBURGUESA*/
+
+.main-nav {
+    visibility: collapse;
+
+}
+
 
 /*--------------ARTICLE----------*/
 
@@ -233,8 +239,13 @@ header div {
     grid-gap: 1rem;
     padding: 2em;
     overflow: hidden;
+    justify-content: center;
 }
 
+.container div{
+    display: flex;
+    align-items: center;
+}
 .titulo3 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -898,11 +909,115 @@ iframe {
 
 
 @media only screen and (max-width: 600px) {
-   
-    .navAdopciones{
+
+    .navAdopciones {
         display: none;
     }
-   
+
+    .main-nav {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100% !important;
+        transition: all .2s linear;
+        z-index: 1000;
+    }
+
+    .main-nav.show {
+        margin-left: 0em !important;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        color: rgb(236, 236, 236);
+        margin-top: 3em;
+    }
+
+    .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .link-item::after {
+        position: absolute;
+        content: "";
+        background-color: black;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+    }
+
+    .link-item:hover::after {
+        width: 100%;
+    }
+
+    .button-menu {
+        z-index: 2000;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: fixed;
+        top: 1em;
+        left: 1em;
+    }
+
+    .button-menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: black;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+    }
+
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+    }
+
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+
+
+    .link-item {
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 2rem;
+    }
+
+
+
 
     .bodyAdopciones {
         grid-template-rows: auto auto auto auto auto 100vh;
@@ -1026,7 +1141,6 @@ iframe {
         justify-content: center;
         align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         margin-left: -0.5em;
     }
 
     footer {
@@ -1044,7 +1158,7 @@ iframe {
     }
 
     .contacto ul a img {
-      
+
         margin-bottom: 1em;
         width: 40px;
     }
