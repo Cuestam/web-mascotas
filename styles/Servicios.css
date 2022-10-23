@@ -334,7 +334,7 @@ p a {
 .btnPostulate:hover {
     background-color: #1e2c42;
 }
-
+/* ----FOOTER-----*/
 footer {
     background-color: white;
     display: flex;
@@ -460,6 +460,33 @@ textarea::placeholder {
 .contacto ul a img {
     width: 70%;
     filter: grayscale(1);
+    animation: float 5s ease-in-out infinite;
+}
+ 
+.contacto ul a .face {
+    animation-delay: 1s;
+}
+
+.contacto ul a .link {
+    animation-delay: 2s;
+}
+
+.contacto ul a .twitter {
+    animation-delay: 3s;
+} 
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .contacto ul a img:hover {
@@ -473,8 +500,8 @@ textarea::placeholder {
 
 iframe {
     padding: 1em;
-    width: 17rem;
-    height: 17rem;
+    width: 100%;
+    height: 90%;
 }
 
 

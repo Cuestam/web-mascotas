@@ -23,10 +23,10 @@ document.getElementById('footer').innerHTML = `
 <h3 class="contactoh3">Contacto</h3>
 <p class="textoF">Como organización sabemos que cada mascota cuenta, seguinos en nuestras redes y participa activamente.</p>
 <ul>
-    <a href="https://www.instagram.com"><img src="/imagenes/instagram.png" alt="logo instagram"></a>
-    <a href="https://es-la.facebook.com"><img src="/imagenes/facebook.png" alt="logo facebook"></a>
-    <a href "https://linkedin.com" ><img src="/imagenes/linkedin.png" alt="logo linkedin"></a>
-    <a href="https://twitter.com"><img src="/imagenes/twitter.png" alt="logo twitter"></a>
+    <a href="https://www.instagram.com"><img class="insta" src="/imagenes/instagram.png" alt="logo instagram"></a>
+    <a href="https://es-la.facebook.com"><img class="face" src="/imagenes/facebook.png" alt="logo facebook"></a>
+    <a href "https://linkedin.com" ><img class="link" src="/imagenes/linkedin.png" alt="logo linkedin"></a>
+    <a href="https://twitter.com"><img class="twitter" src="/imagenes/twitter.png" alt="logo twitter"></a>
 </ul>
 </div>
 <div class="divForm">

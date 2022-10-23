@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 * {
@@ -98,6 +97,10 @@ header nav a::before {
 header div {
     margin-bottom: 3em;
     width: 80%;
+}
+
+.hamburguer {
+    display: none;
 }
 
 .what img {
@@ -499,6 +502,33 @@ textarea::placeholder {
 .contacto ul a img {
     width: 70%;
     filter: grayscale(1);
+    animation: float 5s ease-in-out infinite;
+}
+
+.contacto ul a .face {
+    animation-delay: 1s;
+}
+
+.contacto ul a .link {
+    animation-delay: 2s;
+}
+
+.contacto ul a .twitter {
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .contacto ul a img:hover {
@@ -512,8 +542,8 @@ textarea::placeholder {
 
 iframe {
     padding: 1em;
-    width: 17rem;
-    height: 17rem;
+    width: 100%;
+    height: 90%;
 }
 
 
@@ -862,12 +892,17 @@ iframe {
     .iframeC {
         margin-top: -1em;
     }
-  
+
 
 }
 
 
 @media only screen and (max-width: 600px) {
+   
+    .navAdopciones{
+        display: none;
+    }
+   
 
     .bodyAdopciones {
         grid-template-rows: auto auto auto auto auto 100vh;
@@ -897,7 +932,7 @@ iframe {
         align-items: center;
     }
 
-    header ul li  {
+    header ul li {
         margin-top: 1em !important;
         font-size: 1.5em;
     }
@@ -940,7 +975,7 @@ iframe {
 
             center;
     }
-    
+
     .containerCard button {
         display: block;
         text-decoration: none;
@@ -977,20 +1012,22 @@ iframe {
     .what {
         display: none;
     }
- 
+
 }
 
 @media only screen and (max-width: 420px) {
 
-    .tituloA2{
+    .tituloA2 {
         margin-top: 1em;
         text-align: center;
     }
 
-    .container{
+    .container {
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        margin-left: -1.5em;
-    } 
+         margin-left: -0.5em;
+    }
 
     footer {
         grid-area: footer;
@@ -1002,15 +1039,16 @@ iframe {
         position: fixed;
         bottom: 0em;
         height: 100vh;
-        
-    
+
+
     }
+
     .contacto ul a img {
-        margin-top: 1em;
+      
         margin-bottom: 1em;
         width: 40px;
     }
-    
+
     footer div {
         padding: 1em;
     }
@@ -1019,29 +1057,29 @@ iframe {
         width: 50vh;
         height: 80%;
     }
-    
-    
+
+
     .contactoh3 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.8em;
         text-align: center;
     }
-    
+
 
     .contacto {
-        height: 80%;
+        height: 50%;
         width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    
-    
+
+
+
     .iframeC {
-     display: none;
+        display: none;
     }
-    
- 
-  
+
+
+
 }
