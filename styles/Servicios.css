@@ -32,6 +32,10 @@ header nav {
     z-index: 1000 !important;
 }
 
+.main-nav {
+    visibility: collapse;
+
+}
 
 .logo {
     margin-left: 2em;

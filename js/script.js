@@ -1,17 +1,19 @@
-const toggleButton = document.getElementById('button-menu')
-const navWrapper = document.getElementById('nav')
+ /*----------MENU HAMBURGUESA------------- */
 
-toggleButton.addEventListener('click',() => {
-  toggleButton.classList.toggle('close')
-  navWrapper.classList.toggle('show')
-})
-
-navWrapper.addEventListener('click',e => {
-  if(e.target.id === 'nav'){
-    navWrapper.classList.remove('show')
-    toggleButton.classList.remove('close')
-  }
-})
+ const toggleButton = document.getElementById('button-menu')
+ const navWrapper = document.getElementById('hamb')
+ 
+ toggleButton.addEventListener('click',() => {
+   toggleButton.classList.toggle('close')
+   navWrapper.classList.toggle('show')
+ })
+ 
+ navWrapper.addEventListener('click',e => {
+   if(e.target.id === 'hamb'){
+     navWrapper.classList.remove('show')
+     toggleButton.classList.remove('close')
+   }
+ })
 /*----------ANIMACION NAVBAR------------- */
 
 let ubicacionPrincipal = window.pageYOffset;
