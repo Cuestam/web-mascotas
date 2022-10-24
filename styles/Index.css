@@ -63,12 +63,11 @@ li {
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    align-self: center;
+    justify-content: center;
     width: 40%;
     margin-right: 5em;
-
+    align-items: center;
+    margin-top: 1em;
 }
 
 header nav a {
@@ -82,7 +81,6 @@ header nav a {
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
-
 
 }
 
@@ -143,7 +141,7 @@ header div {
 
 }
 
-.sector1 h2 {
+.Tsector1 {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
@@ -184,7 +182,7 @@ header div {
 
 /* ----------SECCION 2 -------------*/
 
-.sector2 h2 {
+.Tsector2 {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
